@@ -35,4 +35,27 @@ if(opcionSeleccionadaNumero == 1):
 
 # Registrar usuario
 if(opcionSeleccionadaNumero == 2):
+# Usuarigo digita su nombre
+
     print("Formulario para registrarse");
+    nombre=""
+    while (nombre == ""):
+        nombre = input("Digita tu nombre de usuario ")
+    if (nombre == ""):
+        print("Espacio vacio vuelve a intentar")
+    print("Hola!!",nombre)
+
+# solicitar edad de usuario
+    #intentar converit la edad a un numero para que sea valido
+    edad = False
+    while (edad == False):
+        dato = input("Digita tu edad ")
+        try:
+            numero = int(dato) 
+            if (numero > 100):
+                print(" numero no valido")
+            else :
+                edad = True        
+        except:
+            print("Eso no es un número, intenta de nuevo.\n")
+
