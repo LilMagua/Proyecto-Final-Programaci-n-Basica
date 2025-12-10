@@ -1,25 +1,29 @@
-📘 Sistema de Usuarios y Notas (Python)
+# 📘 Sistema de Usuarios y Notas (Python)
 
 Link del Manual de usuario -> https://drive.google.com/file/d/1Z2hiJnjSVxzuLA6SFq8EaMaTTIcnXu-2/view?usp=sharing
 
 Este proyecto es una aplicación de consola desarrollada en Python que permite gestionar usuarios y notas utilizando archivos de texto como almacenamiento simple. No requiere librerías externas ni bases de datos.
 
-🚀 Características principales
+---
 
-👤 Gestión de usuarios
-Registro de usuarios
-Validación de nombre, edad y contraseña
-Inicio de sesión
-Edición del usuario actualmente autenticado
-Salida del sistema
+## 🚀 Características principales
 
-📝 Gestión de notas
-Los usuarios pueden:
-Crear notas
-Ver solo sus notas
-Editar notas
-Eliminar notas
+### 👤 Gestión de usuarios  
+Registro de usuarios  
+Validación de nombre, edad y contraseña  
+Inicio de sesión  
+Edición del usuario actualmente autenticado  
+Salida del sistema  
+
+### 📝 Gestión de notas  
+Los usuarios pueden:  
+Crear notas  
+Ver solo sus notas  
+Editar notas  
+Eliminar notas  
 Cada nota tiene un ID autogenerado (en la posición 0 del registro)  
+
+---
 
 ## 📁 Estructura del proyecto
 
@@ -33,59 +37,78 @@ Proyecto/
 └── notas.txt             # Archivo donde se guardan notas
 ```
 
-📦 Archivos utilizados
-usuarios.txt
+---
 
-Formato por línea:
-nombre|contrasena|edad
+## 📦 Archivos utilizados
 
-notas.txt
+### `usuarios.txt`  
+Formato por línea:  
+nombre|contrasena|edad  
 
-Formato por línea:
-id|usuario|nombreNota|informacion
+### `notas.txt`  
+Formato por línea:  
+id|usuario|nombreNota|informacion  
 
-▶️ Cómo ejecutar el programa
+---
 
-Clonar el repositorio:
+## ▶️ Cómo ejecutar el programa
+
+**Clonar el repositorio:**  
+```
 git clone https://github.com/LilMagua/Proyecto-Final-Programaci-n-Basica.git
+```
 
-Entrar al proyecto:
+**Entrar al proyecto:**  
+```
 cd Proyecto-Final-Programaci-n-Basica
+```
 
-Ejecutar el programa:
+**Ejecutar el programa:**  
+```
 python3 main.py
+```
 
 (No se requieren librerías externas)
 
-🧠 Funcionamiento general
-Menú principal
-Registrarse
-Ingresar
-Salir
+---
 
-Menú del sistema después de iniciar sesión
-Crear nota
-Ver notas
-Editar nota
-Eliminar nota
-Editar usuario
-Salir
+## 🧠 Funcionamiento general
 
-📌 Validaciones
-Usuarios
-Nombre: 3 a 10 caracteres
-Edad: entre 5 y 100
-Contraseña: 3 a 10 caracteres y confirmación
+### Menú principal  
+Registrarse  
+Ingresar  
+Salir  
 
-Notas
-Título: 3 a 15 caracteres
-Contenido: 3 a 50 caracteres
-IDs autogenerados y únicos
+### Menú del sistema después de iniciar sesión  
+Crear nota  
+Ver notas  
+Editar nota  
+Eliminar nota  
+Editar usuario  
+Salir  
 
-🛠️ Tecnologías utilizadas
-Python 
-Archivos .txt como persistencia
+---
 
-👨‍💻 Autores
-Javier Alexander Buitrago Torres
-Airann Estiben Yepes Barrera
+## 📌 Validaciones
+
+### Usuarios  
+Nombre: 3 a 10 caracteres  
+Edad: entre 5 y 100  
+Contraseña: 3 a 10 caracteres + confirmación  
+
+### Notas  
+Título: 3 a 15 caracteres  
+Contenido: 3 a 50 caracteres  
+IDs autogenerados y únicos  
+
+---
+
+## 🛠️ Tecnologías utilizadas  
+Python  
+Archivos .txt como persistencia  
+
+---
+
+## 👨‍💻 Autores  
+Javier Alexander Buitrago Torres  
+Airann Estiben Yepes Barrera  
