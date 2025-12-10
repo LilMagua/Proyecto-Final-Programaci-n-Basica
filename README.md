@@ -21,14 +21,17 @@ Editar notas
 Eliminar notas
 Cada nota tiene un ID autogenerado (en la posición 0 del registro)  
 
-📁 Estructura del proyecto
+## 📁 Estructura del proyecto
+
+```
 Proyecto/
-├── main.py # Archivo principal
-├── functionsUsers.py # CRUD de usuarios
-├── functionsNotes.py # CRUD de notas
-├── config.py # Rutas a los archivos de almacenamiento
-├── usuarios.txt # Archivo donde se guardan usuarios
-└── notas.txt # Archivo donde se guardan notas
+├── main.py               # Archivo principal
+├── functionsUsers.py     # CRUD de usuarios
+├── functionsNotes.py     # CRUD de notas
+├── config.py             # Rutas a los archivos de almacenamiento
+├── usuarios.txt          # Archivo donde se guardan usuarios
+└── notas.txt             # Archivo donde se guardan notas
+```
 
 📦 Archivos utilizados
 usuarios.txt
