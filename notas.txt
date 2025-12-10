@@ -1,3 +1,0 @@
-test|Nombre Nota|nombre nota
-test|name note|Esta es una nota de prueba
-test|Compras|Comprar leche

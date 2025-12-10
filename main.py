@@ -1,6 +1,6 @@
 # Importaciones
-from functionsUsers import menu_ingreso, revisar_rango, guardar_usuario, registrar_nombre, registrar_edad, registrar_contrasena, ingresar_usuario, salir
-from functionsNotes import menu_notas, guardar_nota, registrar_informacion, registrar_nombreNota
+from functionsUsers import menu_ingreso, revisar_rango, guardar_usuario, registrar_nombre, registrar_edad, registrar_contrasena, ingresar_usuario, editar_usuario,salir # O podemos usar *
+from functionsNotes import menu_notas, guardar_nota, registrar_informacion, registrar_nombreNota, mostrar_notas, editar_nota, eliminar_nota # O podemos usar *
 from config import lista_usuarios, lista_notas
 
 while True:  
@@ -30,15 +30,15 @@ while True:
             while True:
                 menu_notas()
 
-                opcionNotasTexto = input("")  # ← ✔ Esto guarda la opción como texto
+                opcionNotasTexto = input("")  # Esto guarda la opcion como texto
 
                 opcionNotas = revisar_rango(opcionNotasTexto, 1, 6)  
-                # ← ✔ Esto valida y devuelve el número o False
+                # Esto valida y devuelve el número o False
 
                 if opcionNotas == False:
-                    continue  # seguir pidiendo una opción válida
+                    continue  # seguir pidiendo una opción vAlida
 
-                # ----- AQUÍ VAN LAS ACCIONES DE LAS NOTAS -----
+                # ----- AQUI VAN LAS ACCIONES DE LAS NOTAS -----
                 if opcionNotas == 1:
                     print("### Formulario para crear nota ###")
                     nombreNota = registrar_nombreNota();
@@ -47,14 +47,27 @@ while True:
                     guardar_nota(nombre_usuario_ingresado,nombreNota,informacion, lista_notas);
                     
                 elif opcionNotas == 2:
-                    print("Opción 2 → Ver notas")
+                    print("### Tus notas ###")
+                    mostrar_notas(nombre_usuario_ingresado, lista_notas)
+
                 elif opcionNotas == 3:
-                    print("Opción 3 → Editar nota")
+                    print("### Editar nota ###")
+                    editar_nota(nombre_usuario_ingresado,lista_notas);
+                
                 elif opcionNotas == 4:
-                    print("Opción 4 → Eliminar nota")
+                    print("### Eliminar nota ###")
+                    eliminar_nota(nombre_usuario_ingresado,lista_notas);
+                
+                elif opcionNotas == 5:
+                        print("### Editar usuario ###")
+                        nuevo_nombre = editar_usuario(nombre_usuario_ingresado, lista_usuarios)
+
+                        if nuevo_nombre != False:
+                            # Si cambió su nombre, actualizar la variable en sesión
+                            nombre_usuario_ingresado = nuevo_nombre
+                
                 elif opcionNotas == 6:
-                    print("Saliendo del menú de notas...")
-                    break  # sales solo del menú de notas
+                    salir();
 
     # Salir 
     elif opcion == 3:
