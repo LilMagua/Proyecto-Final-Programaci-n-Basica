@@ -43,10 +43,9 @@ def guardar_usuario(nombre, edad, contrasena, archivo):
     f.write(linea)
     f.close() 
     print("##################################");
-    print("Usuario registrado correctamente.\n");
+    print("Usuario registrado correctamente.");
     print("##################################");
 
-    menu_ingreso();
 
 # FALTA VERIFICACION DE QUE NO EXISTE OTRO USUARIO CON ESE NOMBRE
 def registrar_nombre():
@@ -156,7 +155,9 @@ def ingresar_usuario(archivo):
             if usuarioIngresado == nombre:
                 # Usuario encontrado → Validar contraseña
                 if contrasenaIngresada == contrasena:
+                    print("#############################################")
                     print(f"Bienvenido {nombre}, sesión iniciada correctamente.")
+                    print("#############################################")
                     return nombre;
                 else:
                     print("Contraseña incorrecta.")
